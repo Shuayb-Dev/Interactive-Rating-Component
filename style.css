@@ -67,11 +67,23 @@ p {
   height: 50px;
   justify-content: center;
   width: 50px;
+  transition: background-color 0.5s ease;
+}
+
+.rating-1:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
 }
 
 .rating-1 p {
   font-weight: 400;
   margin: 0 auto;
+  transition: color 0.5s ease;
+}
+
+.rating-1:hover p {
+  color: black;
 }
 
 .button-container {
