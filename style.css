@@ -106,4 +106,40 @@ p {
   letter-spacing: 2px;
   margin: 0 auto;
   width: 380px;
+  transition: background-color 0.5s ease;
+}
+
+.button-container button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  color: black;
+}
+
+#illustration,
+#thanks,
+#note {
+  display: none;
+  margin: auto;
+}
+
+#thanks,
+#note {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  position: relative;
+  top: 60px;
+}
+
+#thanks {
+  position: relative;
+  left: 150px;
+}
+
+#note p {
+  text-align: justify;
+  text-justify: inter-word;
 }
