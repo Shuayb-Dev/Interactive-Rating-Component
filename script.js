@@ -1,15 +1,22 @@
-let selectedRating = 0;
+let selectedRating = 0; // This will store the selected rating
 
+// This function will update the selected rating when a rating is clicked
 function selectRating(rating) {
-  selectedRating = rating;
+  selectedRating = rating; // Store the clicked rating value
 }
 
+// This function will display the selected rating when the submit button is clicked
 function submitRating() {
   let ratingText = document.getElementById("rating-text");
 
-  // Display the selected rating text
-  ratingText.style.display = "block";
-  ratingText.innerHTML = `You selected ${selectedRating} out of 5`;
+  if (selectedRating === 0) {
+    // If no rating was selected, show an alert
+    alert("Please select a rating before submitting!");
+  } else {
+    // Show the rating text and display the selected rating
+    ratingText.style.display = "block";
+    ratingText.innerHTML = `You selected ${selectedRating} out of 5`;
+  }
 }
 
 function submit() {
