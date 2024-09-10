@@ -128,18 +128,24 @@ p {
   color: white;
   font-family: "Overpass", sans-serif;
   margin: auto;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: center;
   position: relative;
   top: 60px;
 }
 
-#thanks {
+#rating-text {
   position: relative;
-  left: 150px;
+  left: 120px;
+  top: 40px;
+  background-color: hsl(207, 10%, 18%);
+  width: 165px;
+  color: hsl(25, 97%, 53%);
+  border-radius: 10px;
 }
 
-#note p {
-  text-align: justify;
-  text-justify: inter-word;
+#rating-text p {
+  margin: auto;
+  position: relative;
+  left: 200px;
+  text-align: center;
 }
