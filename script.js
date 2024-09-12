@@ -5,6 +5,8 @@ function selectRating(rating) {
   selectedRating = rating; // Store the clicked rating value
 }
 
+//Update Main
+
 // This function will display the selected rating when the submit button is clicked
 function submitRating() {
   let ratingText = document.getElementById("rating-text");
